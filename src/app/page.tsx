@@ -14,7 +14,7 @@ import SuccessCounter from "@/components/SuccessCounter";
 
 const page = () => {
 	return (
-		<div className="text-white bg-slate-600 flex flex-col w-full">
+		<div className="text-white bg-[#181A1B] flex flex-col w-full ">
 			<Headbar1 />
 			<HeadMenuBar2 />
 			<HeroCorousel />

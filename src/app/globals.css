@@ -5,3 +5,18 @@
 .i2ctjourneybottomborder {
 	border-bottom: 1px solid rgb(150, 103, 1);
 }
+
+#triangle {
+	width: 0;
+	height: 0;
+	/* border-left: 50px solid transparent; */
+	border-right: 50px solid transparent;
+
+	border-bottom: 5.5rem solid #a87300;
+}
+
+/* .bgatt2 {
+	background-attachment: fixed;
+	background-image: url("../../public/BG2.jpeg");
+	background-size: cover;
+} */
