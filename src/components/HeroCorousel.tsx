@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 {
 	/* <img
@@ -16,11 +17,19 @@ import React from "react";
 }
 
 const HeroCorousel = () => {
+	const [Cor, setCor] = useState(0);
+	const [Src, setSrc] = useState("cor1.jpg");
+	var arr: String[] = ["cor1.jpg", "cor2.png", "cor3.jpg"];
+	setTimeout(() => {
+		setCor((Cor + 1) % 3);
+		// eslint-disable-next-line
+		setSrc(arr[Cor]);
+	}, 2000);
 	return (
 		<div>
 			<div className="relative h-[35rem] w-full overflow-hidden">
 				<img
-					src="cor1.jpg"
+					src={Src}
 					alt="cor1"
 					className="absolute opacity-30 w-full h-full "
 				/>
