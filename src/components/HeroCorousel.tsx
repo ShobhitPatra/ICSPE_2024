@@ -18,12 +18,12 @@ import React, { useState } from "react";
 
 const HeroCorousel = () => {
 	const [Cor, setCor] = useState(0);
-	const [Src, setSrc] = useState("cor1.jpg");
+	const [Src, setSrc] = React.useState<string>("cor1.jpg");
 	var arr: String[] = ["cor1.jpg", "cor2.png", "cor3.jpg"];
 	setTimeout(() => {
 		setCor((Cor + 1) % 3);
 		// eslint-disable-next-line
-		setSrc(arr[Cor]);
+		setSrc(arr[Cor].toString());
 	}, 2000);
 	return (
 		<div>
