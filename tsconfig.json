@@ -22,6 +22,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/components/sub_components/International_Advisory_Members.jsx",
+    "src/components/sub_components/National_Advisory_Members.jsx",
+    "src/components/sub_components/Organizing_Committee.jsx",
+    "src/components/sub_components/Registration.jsx"
+  ],
   "exclude": ["node_modules"]
 }
